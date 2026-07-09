@@ -1,0 +1,6 @@
+{
+  "name": "motion-craft",
+  "version": "0.1.0",
+  "description": "Tool-agnostic motion-design knowledge layer: easing, the 12 principles, timing & pacing, kinetic typography, and compositing architecture — makes any runtime (HyperFrames, Remotion, GSAP) produce organic, principled motion.",
+  "author": { "name": "Fynn Ignacczak" }
+}

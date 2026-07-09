@@ -1,0 +1,8 @@
+{
+  "name": "fynn-motion",
+  "owner": { "name": "Fynn Ignacczak" },
+  "plugins": [
+    { "name": "motion-craft", "source": "./motion-craft" },
+    { "name": "motion-ae-bridge", "source": "./motion-ae-bridge" }
+  ]
+}

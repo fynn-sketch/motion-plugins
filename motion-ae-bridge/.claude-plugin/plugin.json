@@ -1,0 +1,6 @@
+{
+  "name": "motion-ae-bridge",
+  "version": "0.1.0",
+  "description": "Drives After Effects headless via the DoScript pipeline — scripted expressions, track mattes, pre-comps, and MOGRT export with baked-in gotchas, plus a guided GUI workflow for non-scriptable tracking. Companion to motion-craft.",
+  "author": { "name": "Fynn Ignacczak" }
+}
