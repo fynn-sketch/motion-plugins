@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Masking &amp; Blend</title>
+<style>
+  body { margin:0; background:#0b0b10; color:#fff; font-family:system-ui; display:grid; gap:40px; place-items:center; padding:48px; }
+  .demo { width:min(560px,90vw); }
+  /* 1. Image revealed through text */
+  .text-mask { font:900 96px/1 system-ui; text-transform:uppercase; text-align:center;
+    background:url('https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=1000') center/cover;
+    -webkit-background-clip:text; background-clip:text; color:transparent; }
+  /* 2. clip-path wipe on hover */
+  .wipe { height:160px; border-radius:16px; background:linear-gradient(135deg,#ff6b6b,#4ecdc4);
+    clip-path:inset(0 60% 0 0); transition:clip-path .6s cubic-bezier(.4,0,.2,1); }
+  .wipe:hover { clip-path:inset(0 0 0 0); }
+  /* 3. mask-image with gradient */
+  .fade { height:120px; background:conic-gradient(from 0deg,#f7971e,#ffd200,#f7971e); border-radius:16px;
+    -webkit-mask:linear-gradient(90deg,transparent,#000 30%,#000 70%,transparent);
+            mask:linear-gradient(90deg,transparent,#000 30%,#000 70%,transparent); }
+  /* 4. mix-blend-mode */
+  .blend { position:relative; height:160px; border-radius:16px; overflow:hidden; background:#222; }
+  .blend b { position:absolute; inset:0; display:grid; place-items:center; font:900 80px/1 system-ui;
+    color:#fff; mix-blend-mode:overlay; }
+  .blend i { position:absolute; inset:0; background:radial-gradient(circle at 30% 40%,#e14eca,#4568dc); }
+  small { opacity:.6; }
+</style>
+</head>
+<body>
+  <div class="demo"><div class="text-mask">GLOW</div></div>
+  <div class="demo"><div class="wipe"></div><small>hover: clip-path wipe</small></div>
+  <div class="demo"><div class="fade"></div><small>mask-image gradient</small></div>
+  <div class="demo"><div class="blend"><i></i><b>MIX</b></div></div>
+</body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "name": "motion-fx-web",
+  "version": "0.1.0",
+  "description": "Runnable web-native motion-effect recipes — liquid glass (2D CSS/SVG + 3D three.js refraction), advanced SVG shape-morphing, masking & blend (web track mattes), and displacement/distortion — with a WebGL-headless render recipe for reels. Third of the motion-* series.",
+  "author": { "name": "Fynn Ignacczak" }
+}
